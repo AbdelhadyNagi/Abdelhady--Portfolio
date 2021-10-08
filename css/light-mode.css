@@ -1,0 +1,38 @@
+.views,
+footer {
+  background-color: rgba(255, 255, 255);
+}
+.views .view .desktop i,
+.views .view .phone i {
+  color: rgba(0, 0, 0, 0.3);
+}
+.views .view .desktop:hover i:not(.active),
+.views .view .phone:hover i:not(.active) {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.page-content-md .tabs.list-group .list-group-item {
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.02);
+}
+.page-content-md .tabs.list-group .list-group-item:hover {
+  background-color: #bcbcbc15;
+}
+.list-group-item.active {
+  background-color: #bcbcbc40;
+}
+.list-group-item.active p {
+  color: #4a4a4a;
+}
+.page-content-md .tab-content .home .parent .txt .contact .hire {
+  border: 1px solid black;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.page-content-md .tab-content .home .parent .txt .contact .cv,
+.social-accounts ul li {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+footer {
+  background-color: #bcbcbc;
+  box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.175);
+  color: black;
+}
