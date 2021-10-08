@@ -299,3 +299,10 @@ footer .abdelhady p a {
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 /* ...............................End Projects............................. */
+/* ...............................Start Contacts............................. */
+.contacts .freelancing ul li {
+  width: fit-content;
+  transition: .8s;
+}
+
+/* ...............................End Contacts............................. */

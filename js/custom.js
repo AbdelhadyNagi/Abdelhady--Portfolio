@@ -21,11 +21,25 @@ $(function () {
       "margin-right": "auto",
     });
   });
+  // Freelancing Items
+  var freeLancLink = $(".contacts .freelancing ul li a");
+  freeLancLink.hover(
+    function () {
+      if ($(this).parent().hasClass("upwork")) {
+        $(this).find("p").text("/Abdelhady Nagi");
+      } else if ($(this).parent().hasClass("freelancer")) {
+        $(this).find("p").text("@AbdelhadyNagi");
+      }
+    },
+    function () {
+      $(this).find("p").text("");
+    }
+  );
 });
 // Trigger egyfwd Modal
 var myModal = document.getElementById("myModal");
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
+myModal.addEventListener("shown.bs.modal", function () {
+  myInput.focus();
+});
 
 // *.....................................................................*
