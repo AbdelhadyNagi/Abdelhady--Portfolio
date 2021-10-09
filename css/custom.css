@@ -301,33 +301,52 @@ footer .abdelhady p a {
 /* ...............................End Projects............................. */
 /* ...............................Start Contacts............................. */
 .contacts .freelancing ul li {
-  width: fit-content;
+  position: relative;
+  width: 20%;
+  height: 60px;
+  cursor: pointer;
+}
+.contacts .freelancing ul li img {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+.contacts .freelancing ul li a {
+  width: 10px;
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin-left: auto;
-  margin-right: auto;
 }
+
 .contacts .freelancing ul li p {
   transition: 0.3s;
   font-size: 16px;
   font-weight: 700;
   color: #66555c;
-  width: 0;
   display: none;
+  padding-left: 45px;
 }
 .contacts .social-contacts ul li {
-  width: fit-content;
+  position: relative;
+  width: 20%;
+  height: 60px;
+  cursor: pointer;
+}
+.contacts .social-contacts ul li i {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+.contacts .social-contacts ul li a {
+  width: 0;
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .contacts .social-contacts ul li p {
   transition: 0.3s;
   font-size: 16px;
   font-weight: 700;
   color: #66555c;
-  width: 0;
   display: none;
+  padding-left: 45px;
 }
 /* ...............................End Contacts............................. */

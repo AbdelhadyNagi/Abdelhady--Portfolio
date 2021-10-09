@@ -22,127 +22,122 @@ $(function () {
     });
   });
   // Freelancing Items
-  var freeLancLink = $(".contacts .freelancing ul li a");
+  var freeLancLink = $(".contacts .freelancing ul li");
   freeLancLink.hover(
     function () {
-      if ($(this).parent().hasClass("upwork")) {
-        $(this).find("p").animate(
+      if ($(this).hasClass("upwork")) {
+        $(this).find("a").animate(
           {
-            width: 132,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").text("/Abdelhady Nagi");
-        $(this).find("p").fadeIn(300);
-      } else if ($(this).parent().hasClass("freelancer")) {
-        $(this).find("p").animate(
+        $(this).find("p").html("/Abdelhady&nbsp;Nagi").fadeIn("fast");
+      } else if ($(this).hasClass("freelancer")) {
+        $(this).find("a").animate(
           {
-            width: 132,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").text("@AbdelhadyNagi");
+        $(this).find("p").html("@AbdelhadyNagi").fadeIn("fast");
+      } else if ($(this).hasClass("truelancer")) {
+        $(this).find("a").animate(
+          {
+            width: 220,
+          },
+          150
+        );
+        $(this).find("p").html("/abdelhadynagi").fadeIn("fast");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).parent().hasClass("truelancer")) {
-        $(this).find("p").animate(
+      } else if ($(this).hasClass("mstql")) {
+        $(this).find("a").animate(
           {
-            width: 132,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").text("/abdelhadynagi");
+        $(this).find("p").html("&nbsp;/Abdelhady_97").fadeIn("fast");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).parent().hasClass("mstql")) {
-        $(this).find("p").animate(
+      } else if ($(this).hasClass("gmail")) {
+        $(this).find("a").animate(
           {
-            width: 132,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").html("&nbsp;/Abdelhady_97");
-        $(this).find("p").fadeIn("fast");
-      } else if ($(this).parent().hasClass("gmail")) {
-        $(this).find("p").animate(
-          {
-            width: 132,
-          },
-          50
-        );
-        $(this).find("p").html("&nbsp;/abdelhadynagi97");
+        $(this).find("p").html("&nbsp;/abdelhadynagi97").fadeIn("fast");
         $(this).find("p").fadeIn("fast");
       }
     },
     function () {
-      $(this).find("p").text("");
-      $(this).parent().animate;
-      $(this).find("p").animate(
+      $(this).find("p").html("").fadeOut("fast");
+      $(this).find("a").animate(
         {
           width: 0,
         },
-        50
+        150
       );
-      $(this).find("p").fadeOut("fast");
     }
   );
   // Socail Media Items
-  var SocialLink = $(".contacts .social-contacts ul li a");
+  var SocialLink = $(".contacts .social-contacts ul li");
   SocialLink.hover(
     function () {
-      if ($(this).parent().hasClass("facebook")) {
-        $(this).find("p").animate(
+      if ($(this).hasClass("facebook")) {
+        $(this).find("a").animate(
           {
-            width: 132,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").html("&nbsp;/AbdelhadyNagi97");
-        $(this).find("p").fadeIn(300);
-      } else if ($(this).parent().hasClass("twitter")) {
-        $(this).find("p").animate(
+        $(this).find("p").fadeIn().html("&nbsp;/AbdelhadyNagi97");
+        // $(this).find("p")
+      } else if ($(this).hasClass("twitter")) {
+        $(this).find("a").animate(
           {
-            width: 150,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").text("@AbdelhadyOmar97");
+        $(this).find("p").html("@AbdelhadyOmar97");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).parent().hasClass("linkedin")) {
-        $(this).find("p").animate(
+      } else if ($(this).hasClass("linkedin")) {
+        $(this).find("a").animate(
           {
-            width: 132,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").text("/AbdelhadyNagi");
+        $(this).find("p").html("/AbdelhadyNagi");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).parent().hasClass("instegram")) {
-        $(this).find("p").animate(
+      } else if ($(this).hasClass("instegram")) {
+        $(this).find("a").animate(
           {
-            width: 140,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").html("&nbsp;@abdelhady_nagi");
+        $(this).find("p").html("@abdelhady_nagi");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).parent().hasClass("youtube")) {
-        $(this).find("p").animate(
+      } else if ($(this).hasClass("youtube")) {
+        $(this).find("a").animate(
           {
-            width: 132,
+            width: 220,
           },
-          50
+          150
         );
-        $(this).find("p").html("Abdelhady Nagi");
+        $(this).find("p").html("&nbsp;&nbsp;Abdelhady&nbsp;Nagi");
         $(this).find("p").fadeIn("fast");
       }
     },
     function () {
-      $(this).find("p").text("");
-      $(this).parent().animate;
-      $(this).find("p").animate(
+      $(this).find("p").html("");
+      $(this).find("a").animate(
         {
           width: 0,
         },
-        50
+        250
       );
       $(this).find("p").fadeOut("fast");
     }
