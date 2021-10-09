@@ -47,7 +47,7 @@ body {
   transition: all 0.3s;
 }
 .page-content-md .tabs a {
-  height: calc(20vh - (120px / 5));
+  height: calc(25vh - (120px / 4));
   border-radius: 0;
   display: flex;
   justify-content: center;
