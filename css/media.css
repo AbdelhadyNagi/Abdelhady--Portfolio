@@ -1,5 +1,125 @@
 /* Smart phones and Taplet Screens */
 @media (max-width: 767px) {
+  .row > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .list-group {
+    flex-flow: row nowrap;
+    border-radius: 0;
+    z-index: 999999;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem var(--main-color);
+  }
+  #mopile-tabs {
+    position: fixed;
+    bottom: 56px;
+    left: 0;
+    z-index: 999999;
+  }
+  .navbar img {
+    width: 150px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+  }
+  .list-group-item.active {
+    background-color: #212529;
+  }
+  .list-group-item.active p {
+    color: #fff;
+  }
+  .page-content-md .tabs.list-group .list-group-item.active:hover {
+    background-color: #212529;
+  }
+  .home .parent {
+    position: relative;
+  }
+  .home .parent div:first-child {
+    width: 100% !important;
+  }
+  .home .parent div:first-child .txt {
+    text-align: center;
+    background-color: #00000077;
+    height: auto !important;
+    margin: 0 !important;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+  }
+  .page-content-md .tab-content .home .parent .txt h1 {
+    font-size: 26px;
+  }
+  .page-content-md .tab-content .home .parent .txt small {
+    font-size: 12px;
+    margin-top: -10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  .page-content-md .tab-content .home .parent .txt h4 {
+    font-size: 16px;
+    color: white;
+  }
+  .page-content-md .tab-content .home .parent .txt p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #ffffffbd;
+  }
+  .page-content-md .tab-content .home .parent .txt p span {
+    font-size: 14px;
+    color: #ffffff !important;
+  }
+  .page-content-md .tab-content .home .parent .txt .contact {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .page-content-md .tab-content .home .parent .txt .contact .hire {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-weight: bold;
+  }
+  .page-content-md .tab-content .home .parent .txt .contact .cv {
+    background-color: #232629;
+    color: #f8f9fa;
+    font-weight: bold;
+  }
+  .home .parent div:nth-child(2) img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: -1;
+  }
+  .progress {
+    transform: rotate(90deg);
+  }
+  .projects > div {
+    margin-left: 50% !important;
+    transform: translateX(-50%);
+    margin-top: 0px !important;
+    width: 100%;
+  }
+  .contacts > div {
+    margin-left: 50% !important;
+    transform: translateX(-50%);
+    margin-top: 0px !important;
+    width: 100%;
+  }
+  .contacts h2.h1 {
+    font-size: 24px !important;
+  }
+  footer {
+    display: none;
+  }
+  .page-content-md .tabs.list-group .list-group-item:hover {
+    background-color: #faf6f6;
+  }
+  .page-content-md .tabs a {
+    height: 10vh;
+  }
 }
 /* ........................................................................... */
 /* Small Screens */

@@ -10,15 +10,19 @@ $(function () {
   desktop.click(function () {
     desktopIcon.addClass("active");
     phoneIcon.removeClass("active");
-    $(".page-content-md").css("width", "100%");
+    $("html").animate({
+      width: "100%",
+      marginLeft: 0,
+      marginRight: 0,
+    });
   });
   phone.click(function () {
     desktopIcon.removeClass("active");
     phoneIcon.addClass("active");
-    $(".page-content-phone").css({
+    $("html").animate({
       width: "375px",
-      "margin-left": "auto",
-      "margin-right": "auto",
+      marginLeft: "45%",
+      marginRight: "45%",
     });
   });
   // Freelancing Items
@@ -66,7 +70,7 @@ $(function () {
           },
           150
         );
-        $(this).find("p").html("&nbsp;/abdelhadynagi97").fadeIn("fast");
+        $(this).find("p").html("&nbsp;&nbsp;/abdelhadynagi97").fadeIn("fast");
         $(this).find("p").fadeIn("fast");
       }
     },
