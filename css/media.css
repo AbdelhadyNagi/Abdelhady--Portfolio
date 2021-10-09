@@ -14,7 +14,7 @@
   }
   #mopile-tabs {
     position: fixed;
-    bottom: 56px;
+    top: 56px;
     left: 0;
     z-index: 999999;
   }
@@ -22,7 +22,7 @@
     width: 150px;
     position: fixed;
     top: 10px;
-    left: 0;
+    right: 0;
   }
   .list-group-item.active {
     background-color: #212529;
@@ -45,8 +45,17 @@
     height: auto !important;
     margin: 0 !important;
     position: absolute;
+    left: 0;
     bottom: 0px;
     padding: 10px;
+  }
+  .home .parent div:nth-child(2) img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    z-index: -1;
   }
   .page-content-md .tab-content .home .parent .txt h1 {
     font-size: 26px;
@@ -85,14 +94,7 @@
     color: #f8f9fa;
     font-weight: bold;
   }
-  .home .parent div:nth-child(2) img {
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    z-index: -1;
-  }
+
   .progress {
     transform: rotate(90deg);
   }
@@ -107,6 +109,14 @@
     transform: translateX(-50%);
     margin-top: 0px !important;
     width: 100%;
+    text-align: start;
+  }
+  .contacts > div .freelancing,
+  .contacts > div .social-contacts {
+    margin-top: 0 !important;
+  }
+  .contacts > div li {
+    margin-left: 30%;
   }
   .contacts h2.h1 {
     font-size: 24px !important;
