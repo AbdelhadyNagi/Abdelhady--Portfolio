@@ -39,8 +39,8 @@ body {
 }
 /* ........................................................................... */
 /* Loading Page */
-.loading-page {
-  display: none !important;
+#loading-page {
+  display: flex;
 }
 .loading-page img {
   margin-left: 50%;
