@@ -1,5 +1,8 @@
 /* Smart phones and Taplet Screens */
 @media (max-width: 767px) {
+  body {
+    height: 800px;
+  }
   .row > * {
     padding-left: 0;
     padding-right: 0;
@@ -94,9 +97,44 @@
     color: #f8f9fa;
     font-weight: bold;
   }
-
+  .skills-txt,
+  .learn-txt {
+    font-size: 42px !important;
+    margin-top: 0 !important;
+  }
+  .learn-txt {
+    font-size: 38px !important;
+    margin-bottom: 5px !important;
+  }
+  .skills-logos,
+  .learn-logos {
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .learn-logos {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .skills-logos li,
+  .learn-logos li {
+    max-width: 100% !important;
+    margin: 20px !important;
+  }
+  .skills-logos li img {
+    max-width: 35% !important;
+  }
+  .learn-logos li img {
+    max-width: 45% !important;
+  }
+  .skills .learn-logos li > img[alt="linkedin"],
+  .skills .learn-logos li > img[alt="youtube"] {
+    max-width: 35% !important;
+  }
+  .modal-content {
+    top: 250px;
+  }
   .progress {
-    transform: rotate(90deg);
+    display: none;
   }
   .projects > div {
     margin-left: 50% !important;
@@ -121,14 +159,60 @@
   .contacts h2.h1 {
     font-size: 24px !important;
   }
-  footer {
-    display: none;
-  }
   .page-content-md .tabs.list-group .list-group-item:hover {
     background-color: #faf6f6;
   }
   .page-content-md .tabs a {
     height: 10vh;
+  }
+  .contacts .freelancing ul li,
+  .contacts .social-contacts ul li {
+    height: 45px;
+    width: 62%;
+  }
+  .contacts .freelancing ul li img {
+    transform: scale(0.8);
+    margin: -6px 0px 0 -7px !important;
+  }
+  .contacts .freelancing ul li img[alt="Gmail"] {
+    margin: 0px 0px 0 -3px !important;
+  }
+  .contacts .freelancing ul li img[alt="Mstql"] {
+    margin: -4px 0px 0 -7px !important;
+  }
+  .contacts .social-contacts ul li i {
+    transform: scale(0.8);
+    margin: -8px 0px 0 -5px !important;
+  }
+  .contacts .freelancing ul li a,
+  .contacts .social-contacts ul li a {
+    width: 212px;
+  }
+  .contacts .freelancing ul li p,
+  .contacts .social-contacts ul li p {
+    display: block;
+    padding-left: 30px;
+    color: #90717e;
+  }
+  footer .copyright p {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  footer .abdelhady p {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  footer .abdelhady p {
+    line-height: 60px;
+    text-align: center;
+    right: 0px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  footer .abdelhady p a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
   }
 }
 /* ........................................................................... */

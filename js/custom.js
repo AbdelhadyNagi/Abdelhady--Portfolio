@@ -37,7 +37,7 @@ $(function () {
   var freeLancLink = $(".contacts .freelancing ul li");
   freeLancLink.hover(
     function () {
-      if ($(this).hasClass("upwork")) {
+      if ($(this).hasClass("upwork") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -45,7 +45,7 @@ $(function () {
           150
         );
         $(this).find("p").html("/Abdelhady&nbsp;Nagi").fadeIn("fast");
-      } else if ($(this).hasClass("freelancer")) {
+      } else if ($(this).hasClass("freelancer") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -53,7 +53,7 @@ $(function () {
           150
         );
         $(this).find("p").html("@AbdelhadyNagi").fadeIn("fast");
-      } else if ($(this).hasClass("truelancer")) {
+      } else if ($(this).hasClass("truelancer") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -62,7 +62,7 @@ $(function () {
         );
         $(this).find("p").html("/abdelhadynagi").fadeIn("fast");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).hasClass("mstql")) {
+      } else if ($(this).hasClass("mstql") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -71,7 +71,7 @@ $(function () {
         );
         $(this).find("p").html("&nbsp;/Abdelhady_97").fadeIn("fast");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).hasClass("gmail")) {
+      } else if ($(this).hasClass("gmail") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -83,20 +83,22 @@ $(function () {
       }
     },
     function () {
-      $(this).find("p").html("").fadeOut("fast");
-      $(this).find("a").animate(
-        {
-          width: 0,
-        },
-        150
-      );
+      if ($(document).width() > 767) {
+        $(this).find("p").html("").fadeOut("fast");
+        $(this).find("a").animate(
+          {
+            width: 0,
+          },
+          150
+        );
+      }
     }
   );
   // Socail Media Items
   var SocialLink = $(".contacts .social-contacts ul li");
   SocialLink.hover(
     function () {
-      if ($(this).hasClass("facebook")) {
+      if ($(this).hasClass("facebook") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -105,7 +107,7 @@ $(function () {
         );
         $(this).find("p").fadeIn().html("&nbsp;/AbdelhadyNagi97");
         // $(this).find("p")
-      } else if ($(this).hasClass("twitter")) {
+      } else if ($(this).hasClass("twitter") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -114,7 +116,7 @@ $(function () {
         );
         $(this).find("p").html("@AbdelhadyOmar97");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).hasClass("linkedin")) {
+      } else if ($(this).hasClass("linkedin") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -123,7 +125,7 @@ $(function () {
         );
         $(this).find("p").html("/AbdelhadyNagi");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).hasClass("instegram")) {
+      } else if ($(this).hasClass("instegram") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -132,7 +134,7 @@ $(function () {
         );
         $(this).find("p").html("@abdelhady_nagi");
         $(this).find("p").fadeIn("fast");
-      } else if ($(this).hasClass("youtube")) {
+      } else if ($(this).hasClass("youtube") && $(document).width() > 767) {
         $(this).find("a").animate(
           {
             width: 220,
@@ -144,16 +146,19 @@ $(function () {
       }
     },
     function () {
-      $(this).find("p").html("");
-      $(this).find("a").animate(
-        {
-          width: 0,
-        },
-        250
-      );
-      $(this).find("p").fadeOut("fast");
+      if ($(document).width() > 767) {
+        $(this).find("p").html("");
+        $(this).find("a").animate(
+          {
+            width: 0,
+          },
+          250
+        );
+        $(this).find("p").fadeOut("fast");
+      }
     }
   );
+
   //Hide Social Accounts on Contact Section
   $(".tabs a").click(function () {
     if ($(".tabs .contact").hasClass("active")) {
@@ -162,7 +167,6 @@ $(function () {
       $(".social-accounts").fadeIn("fast");
     }
   });
-  // Collapse Nav Section
 });
 // Trigger egyfwd Modal
 var myModal = document.getElementById("myModal");
