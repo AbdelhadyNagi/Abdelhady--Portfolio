@@ -22,10 +22,10 @@
     z-index: 999999;
   }
   .navbar img {
-    width: 150px;
+    width: 120px;
     position: fixed;
-    top: 10px;
-    right: 0;
+    top: 5px;
+    right: 10px;
   }
   .list-group-item.active {
     background-color: #212529;
@@ -231,6 +231,11 @@
   .page-content-md .tab-content .home .parent .txt p {
     font-size: 14px;
   }
+  .views .logo-img {
+    width: 80%;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
 }
 /* ........................................................................... */
 /* Medium Screens */
@@ -238,12 +243,19 @@
   .page-content-md .tab-content .home .parent .txt {
     margin: 40px 0px 0 60px;
   }
+  .views .logo-img {
+    width: 80%;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
 }
 /* ........................................................................... */
 /* Large Screens */
 @media (min-width: 1200px) {
-  .logo {
-    margin-left: 40px;
+  .views .logo-img {
+    width: 60%;
+    margin-top: 0;
+    margin-left: 18%;
   }
 }
 @media (min-width: 576px) {
