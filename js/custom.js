@@ -161,8 +161,8 @@ $(function () {
       }
     }
   );
-  //Hide Social Accounts on Contact Section Need Corrections
-  $("#list-tab a").clicked(function () {
+  //Hide Social Accounts on Contact Section
+  $("#list-tab a").click(function () {
     if ($(".fade-social-accounts").hasClass("active")) {
       $("#socialAccounts").fadeOut("fast");
     } else {
