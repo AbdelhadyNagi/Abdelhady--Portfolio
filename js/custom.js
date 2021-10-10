@@ -163,7 +163,9 @@ $(function () {
   );
   //Hide Social Accounts on Contact Section
   $("#list-tab a").click(function () {
-    if ($(".fade-social-accounts").hasClass("active")) {
+    if ($(".fade-social-accounts-pc").hasClass("active")) {
+      $("#socialAccounts").fadeOut("fast");
+    } else if ($(".fade-social-accounts-phone").hasClass("active")) {
       $("#socialAccounts").fadeOut("fast");
     } else {
       $("#socialAccounts").fadeIn("fast");
