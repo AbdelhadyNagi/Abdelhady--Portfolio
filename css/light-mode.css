@@ -1,3 +1,6 @@
+body {
+  background-color: #fff;
+}
 .views,
 footer {
   background-color: rgba(255, 255, 255);
@@ -7,6 +10,9 @@ footer {
   color: rgba(0, 0, 0, 0.3);
 }
 .views .view .desktop:hover i:not(.active),
+.views .view i.active {
+  color: var(--main-color);
+}
 .views .view .phone:hover i:not(.active) {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -16,6 +22,18 @@ footer {
 }
 .page-content-md .tabs.list-group .list-group-item:hover {
   background-color: #bcbcbc15;
+}
+.page-content-md .tabs a {
+  color: #9e9e9e;
+}
+.page-content-md .tabs a p {
+  text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.05);
+}
+.page-content-md .tabs a p::first-letter {
+  color: rgba(0, 0, 0, 0.9);
+}
+.page-content-md .tabs.list-group {
+  box-shadow: 1rem 0rem 5rem rgba(0, 0, 0, 0.05);
 }
 .list-group-item.active {
   background-color: #bcbcbc40;

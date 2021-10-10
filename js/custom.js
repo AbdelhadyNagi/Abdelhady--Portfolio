@@ -171,6 +171,24 @@ $(function () {
       $("#socialAccounts").fadeIn("fast");
     }
   });
+  //Trigger Dark-light Mode
+  var clicks = 0;
+  $(".views .dark-light").click(function () {
+    if (clicks == 0) {
+      $(".views .dark-light i:first-child").animate({
+        left: 36,
+      });
+      $("link[href = 'css/light-mode.css']").attr("href", "css/dark-mode.css");
+      $(".views .dark-light i:nth-child(2)").css("color", "white");
+      clicks++;
+    } else {
+      $(".views .dark-light i:first-child").animate({
+        left: 6,
+      });
+      $("link[href = 'css/dark-mode.css']").attr("href", "css/light-mode.css");
+      clicks--;
+    }
+  });
 });
 // Trigger egyfwd Modal
 var myModal = document.getElementById("myModal");

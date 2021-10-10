@@ -21,8 +21,8 @@
       rel="stylesheet"
     />
     <!-- Styling Sheets -->
-    <link rel="stylesheet" href="css/light-mode.css" />
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/light-mode.css" />
     <link rel="stylesheet" href="css/media.css" />
     <title>Abdelhady N.</title>
   </head>
@@ -54,11 +54,21 @@
             <div class="desktop">
               <i class="fas fa-desktop fa-2x me-4 active"></i>
             </div>
-            <div class="phone" id="phone" title="Click">
-              <i class="fas fa-mobile fa-2x"></i>
+            <div class="phone" id="phone">
+              <i
+                class="fas fa-mobile fa-2x"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Click for Phone View"
+              ></i>
             </div>
           </div>
         </div>
+      </div>
+      <div class="dark-light btn rounded-pill">
+        <i class="fas fa-circle"></i>
+        <i class="far fa-sun"></i>
+        <i class="fas fa-moon"></i>
       </div>
     </div>
     <!-- *..........................................................................* -->

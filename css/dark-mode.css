@@ -1,26 +1,53 @@
-.views,
-footer {
-  background-color: rgba(0, 0, 0, 0.9);
+body {
+  background-color: black;
 }
+.views {
+  background-color: black;
+  background-image: var(--bs-gradient) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
 .views .view .desktop i,
 .views .view .phone i {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.274);
 }
 .views .view .desktop:hover i:not(.active),
 .views .view .phone:hover i:not(.active) {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
-.views {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+.views .view i.active {
+  color: var(--main-color);
+}
+.page-content-md .parent img {
+  filter: brightness(0.95);
 }
 .page-content-md .tabs .home {
-  border-top: 1px solid #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.page-content-md .tabs.list-group {
-  box-shadow: 1rem 0rem 5rem rgba(0, 0, 0, 0.05);
+.page-content-md .tabs a {
+  color: white;
+}
+.page-content-md .tabs a p {
+  text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.05);
+  color: rgba(255, 255, 255, 0.699);
+}
+.page-content-md .tabs a p::first-letter {
+  color: #ffffff;
+}
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .list-group-item.active {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: var(--bs-gradient) !important;
+}
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+  background-color: #1d1d1d;
+}
+.page-content-md .tab-content .home {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: var(--bs-gradient) !important;
 }
 .page-content-md .tab-content .home .parent .txt .contact .hire {
   border: 1px solid black;
@@ -30,9 +57,54 @@ footer {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 .social-accounts ul li {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #cecccc;
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.08);
+}
+.social-accounts ul li a i {
+  color: black;
+}
+.page-content-md .tab-content .home .parent .txt h4 {
+  color: #afaeae;
+}
+.page-content-md .tab-content .home .parent .txt h1 {
+  color: var(--main-color);
+  text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.page-content-md .tab-content .home .parent .txt small {
+  color: #afaeaec9;
+  border-bottom: 2px solid var(--main-color);
+}
+.page-content-md .tab-content .home .parent .txt p {
+  color: #afaeae;
+}
+.page-content-md .tab-content .home .parent .txt p span {
+  color: #fffefec2;
+}
+.page-content-md .tab-content .home .parent .txt .contact .hire {
+  background-color: #afaeae;
+  color: black;
+  border-color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.page-content-md .tab-content .home .parent .txt .contact .hire:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+.page-content-md .tab-content .home .parent .txt .contact .cv {
+  background-color: black;
+  border-color: #afaeae;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.page-content-md .tab-content .home .parent .txt .contact .cv:hover {
+  background-color: #afaeae;
+  color: black;
 }
 footer {
   color: #fff;
+  background-color: rgba(0, 0, 0, 1);
   box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.175);
 }
