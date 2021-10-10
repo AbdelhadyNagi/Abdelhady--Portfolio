@@ -3,7 +3,7 @@ phone.onclick = function () {
   window.open(
     "https://abdelhadynagi.github.io/Abdelhady--Portfolio/",
     "mywin",
-    "width=380,height=1024"
+    "width=400,height=1024"
   );
 };
 // jQuery Scripting
@@ -161,13 +161,12 @@ $(function () {
       }
     }
   );
-
-  //Hide Social Accounts on Contact Section
-  $(".tabs a").click(function () {
-    if ($(".tabs .contact").hasClass("active")) {
-      $(".social-accounts").fadeOut("fast");
+  //Hide Social Accounts on Contact Section Need Corrections
+  $("#list-tab a").clicked(function () {
+    if ($(".fade-social-accounts").hasClass("active")) {
+      $("#socialAccounts").fadeOut("fast");
     } else {
-      $(".social-accounts").fadeIn("fast");
+      $("#socialAccounts").fadeIn("fast");
     }
   });
 });
