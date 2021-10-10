@@ -1,9 +1,18 @@
+var phone = document.getElementById("phone");
+phone.onclick = function () {
+  window.open(
+    "https://abdelhadynagi.github.io/Abdelhady--Portfolio/",
+    "mywin",
+    "width=380,height=1024"
+  );
+};
+
 // jQuery Scripting
 $(function () {
   "use strict";
   // Triger Views
   var desktop = $(".views .view .desktop");
-  var phone = $(".views .view .phone");
+  var phoneView = $(".views .view .phone");
   var desktopIcon = $(".views .view .desktop i");
   var phoneIcon = $(".views .view .phone i");
 
@@ -16,14 +25,13 @@ $(function () {
       marginRight: 0,
     });
   });
-  phone.click(function () {
+  phoneView.hover(() => {
     desktopIcon.removeClass("active");
     phoneIcon.addClass("active");
-    $("html").animate({
-      width: "375px",
-      marginLeft: "45%",
-      marginRight: "45%",
-    });
+  });
+  phoneView.mouseleave(() => {
+    desktopIcon.addClass("active");
+    phoneIcon.removeClass("active");
   });
   // Freelancing Items
   var freeLancLink = $(".contacts .freelancing ul li");
@@ -154,6 +162,7 @@ $(function () {
       $(".social-accounts").fadeIn("fast");
     }
   });
+  // Collapse Nav Section
 });
 // Trigger egyfwd Modal
 var myModal = document.getElementById("myModal");
