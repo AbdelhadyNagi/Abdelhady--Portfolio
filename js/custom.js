@@ -10,6 +10,15 @@ phone.onclick = function () {
 // jQuery Scripting
 $(function () {
   "use strict";
+  // Triger Loading Page
+  $(window).load(
+    function () {
+      $("#loading-page").fadeIn("fast");
+    },
+    function () {
+      $("#loading-page").fadeOut("fast");
+    }
+  );
   // Triger Views
   var desktop = $(".views .view .desktop");
   var phoneView = $(".views .view .phone");
