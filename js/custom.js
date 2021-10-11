@@ -1,10 +1,6 @@
 var phone = document.getElementById("phone");
 phone.onclick = function () {
-  window.open(
-    "https://abdelhadynagi.github.io/Abdelhady--Portfolio/",
-    "mywin",
-    "width=400,height=1024"
-  );
+  window.open("http://abdelhadynagi.com/", "mywin", "width=400,height=1024");
 };
 // jQuery Scripting
 $(function () {
