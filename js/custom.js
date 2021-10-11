@@ -171,7 +171,7 @@ $(function () {
       $("#socialAccounts").fadeIn("fast");
     }
   });
-  //Trigger Dark-light Mode
+  //Trigger Dark-light Desktop Mode
   var clicks = 0;
   $(".views .dark-light").click(function () {
     if (clicks == 0) {
@@ -183,6 +183,24 @@ $(function () {
       clicks++;
     } else {
       $(".views .dark-light i:first-child").animate({
+        left: 6,
+      });
+      $("link[href = 'css/dark-mode.css']").attr("href", "css/light-mode.css");
+      clicks--;
+    }
+  });
+  //Trigger Dark-light Mobile Mode
+  var clicks = 0;
+  $("footer .dark-light").click(function () {
+    if (clicks == 0) {
+      $("footer .dark-light i:first-child").animate({
+        left: 28,
+      });
+      $("link[href = 'css/light-mode.css']").attr("href", "css/dark-mode.css");
+      $("footer .dark-light i:nth-child(2)").css("color", "white");
+      clicks++;
+    } else {
+      $("footer .dark-light i:first-child").animate({
         left: 6,
       });
       $("link[href = 'css/dark-mode.css']").attr("href", "css/light-mode.css");

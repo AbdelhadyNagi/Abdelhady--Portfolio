@@ -28,6 +28,7 @@ body {
   transform: scale(1.1);
   color: var(--main-color);
 }
+/* Dark-Light Changer  Desktop*/
 .views .dark-light {
   position: absolute;
   top: 50%;
@@ -148,6 +149,7 @@ body {
 /* Start Social Media Accounts */
 .social-accounts {
   transition: 0.3s;
+  z-index: 5;
 }
 .social-accounts ul li {
   width: 30px;
@@ -204,6 +206,24 @@ footer .abdelhady p a {
   text-decoration: none;
   color: var(--main-color);
   font-weight: bold;
+}
+/* Dark-Light Changer  Phone*/
+footer .dark-light {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  border: 3px solid var(--main-color);
+  width: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .dark-light i:first-child {
+  position: absolute;
+  color: var(--main-color);
+  font-size: 22px;
+  top: 3.2px;
+  left: 3px;
 }
 /* ........................................................................... */
 /* Start Skills Section */
