@@ -35,7 +35,7 @@ body {
     brightness(85%) contrast(84%);
 }
 .page-content-md .parent img {
-  filter: brightness(0.95);
+  filter: brightness(0.85);
 }
 .page-content-md .tabs .home {
   border-top: none;
@@ -133,11 +133,14 @@ body {
 }
 .skills .skills-logos li > img[alt="GitHub"],
 .skills .skills-logos li > img[alt="Bootstrap 5"],
-.skills .skills-logos li > img[alt="jQuery"] {
+.skills .skills-logos li > img[alt="jQuery"],
+.skills .skills-logos li > img[alt="HTML5"],
+.skills .skills-logos li > img[alt="CSS3"],
+.skills .skills-logos li > img[alt="JS"] {
   filter: invert(98%) sepia(98%) saturate(7%) hue-rotate(168deg)
     brightness(102%) contrast(105%);
 }
-.skills .skills-logos li > img[alt="HTML5"],
+/* .skills .skills-logos li > img[alt="HTML5"],
 .skills .skills-logos li > img[alt="CSS3"] {
   filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(112%)
     contrast(330%);
@@ -145,7 +148,7 @@ body {
 .skills .skills-logos li > img[alt="JS"] {
   filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(140%)
     contrast(368%);
-}
+} */
 .learn-logos li > img {
   filter: invert(98%) sepia(98%) saturate(7%) hue-rotate(168deg)
     brightness(102%) contrast(105%);
