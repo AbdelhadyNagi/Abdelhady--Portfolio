@@ -1,9 +1,9 @@
 body {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0);
 }
 @media (max-width: 767px) {
   body {
-    background-color: rgba(0, 0, 0, 0.123);
+    background-color: rgba(0, 0, 0);
   }
   .page-content-md .tabs a {
     background-color: rgba(0, 0, 0, 0.8);
