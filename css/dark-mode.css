@@ -194,6 +194,11 @@ body {
 .contacts .social-contacts ul li p {
   color: #adadae !important;
 }
+@media (max-width: 767px) {
+  .page-content-md .tab-content .projects {
+    margin-top: 0;
+  }
+}
 footer {
   color: #fff;
   background-color: rgba(0, 0, 0, 1);
