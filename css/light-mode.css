@@ -49,6 +49,86 @@ footer {
 .social-accounts ul li {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
+.skills h2.skills-txt {
+  background-image: linear-gradient(
+    90deg,
+    #c64266 2.666%,
+    #f0662c 13.666%,
+    #0c73b8 33.332%,
+    #9e7700 50%,
+    #0868ab 66.666%,
+    #563d7c 84.333%,
+    #020202 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation-rev 0.4s ease forwards;
+}
+.skills h2.skills-txt:hover {
+  animation: text-animation 0.25s ease-in forwards;
+  cursor: default;
+}
+.skills h2.learn-txt {
+  background-image: linear-gradient(
+    90deg,
+    #c64266 2%,
+    #03b3e4 23%,
+    #b1ce45 50%,
+    #007bb6 75%,
+    #ce1312 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation-rev 0.4s ease forwards;
+}
+.skills h2.learn-txt:hover {
+  animation: text-animation 0.25s ease-in forwards;
+  cursor: default;
+}
+@keyframes text-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes text-animation {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 950%;
+  }
+  100% {
+    background-size: 950%;
+  }
+}
+.freelancing h2.h1,
+.social-contacts h2.h1 {
+  background-image: linear-gradient(
+    90deg,
+    #c64266 2.666%,
+    #6ed843 18%,
+    #29b2fe 40%,
+    #0096a0 60%,
+    #27aae2 80%,
+    #b12c1c 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 950%;
+}
+.projects .card {
+  background-color: white;
+  border: none;
+}
+.projects .card img {
+  border-color: white;
+}
 footer {
   background-color: #bcbcbc;
   box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.175);

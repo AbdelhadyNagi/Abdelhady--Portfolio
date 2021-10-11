@@ -11,13 +11,12 @@ body {
 }
 .views {
   background-color: black;
-  background-image: var(--bs-gradient) !important;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .views .view .desktop i,
 .views .view .phone i {
-  color: rgba(255, 255, 255, 0.274);
+  color: #adadae;
 }
 .views .view .desktop:hover i:not(.active),
 .views .view .phone:hover i:not(.active) {
@@ -39,7 +38,7 @@ body {
   filter: brightness(0.95);
 }
 .page-content-md .tabs .home {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: none;
 }
 .page-content-md .tabs a {
   color: white;
@@ -51,20 +50,23 @@ body {
 .page-content-md .tabs a p::first-letter {
   color: #ffffff;
 }
+.page-content-md .tabs a {
+  height: calc(25vh - (119px / 4));
+}
 .list-group-item {
-  background-color: rgb(0 0 0 / 76%);
+  background-color: rgb(0 0 0 / 70%);
 }
 .list-group-item.active {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: var(--bs-gradient) !important;
+  background-color: rgba(0, 0, 0);
 }
-.list-group-item-action:focus,
+.list-group-item-action:focus {
+  background-color: black;
+}
 .list-group-item-action:hover {
   background-color: #1d1d1d !important;
 }
 .page-content-md .tab-content .home {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: var(--bs-gradient) !important;
+  background-color: rgba(0, 0, 0);
 }
 .page-content-md .tab-content .home .parent .txt .contact .hire {
   border: 1px solid black;
@@ -119,6 +121,75 @@ body {
 .page-content-md .tab-content .home .parent .txt .contact .cv:hover {
   background-color: #afaeae;
   color: black;
+}
+.page-content-md .tab-content .skills {
+  background-color: rgba(0, 0, 0);
+}
+.skills h2.learn-txt,
+.skills h2.skills-txt {
+  background-image: none !important;
+  color: var(--main-color);
+  text-shadow: -2px 2px 3px rgb(0 0 0 / 20%);
+}
+.skills .skills-logos li > img[alt="GitHub"],
+.skills .skills-logos li > img[alt="Bootstrap 5"],
+.skills .skills-logos li > img[alt="jQuery"] {
+  filter: invert(98%) sepia(98%) saturate(7%) hue-rotate(168deg)
+    brightness(102%) contrast(105%);
+}
+.skills .skills-logos li > img[alt="HTML5"],
+.skills .skills-logos li > img[alt="CSS3"] {
+  filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(112%)
+    contrast(330%);
+}
+.skills .skills-logos li > img[alt="JS"] {
+  filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(140%)
+    contrast(368%);
+}
+.learn-logos li > img {
+  filter: invert(98%) sepia(98%) saturate(7%) hue-rotate(168deg)
+    brightness(102%) contrast(105%);
+}
+
+.progress {
+  background-color: black !important;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+.progress .progress-bar {
+  background-color: #1f1f1f !important;
+}
+.page-content-md .tab-content .projects {
+  margin-top: 23px;
+  background-color: rgba(0, 0, 0);
+}
+.projects .card {
+  background-color: #434343;
+  border: none;
+  box-shadow: rgb(255 255 255 / 10%) 0px 1px 29px,
+    rgb(255 255 255 / 10%) 0px 12px 20px;
+}
+.projects .card img {
+  border-color: #212121;
+}
+.page-content-md .tab-content .contacts {
+  background-color: black;
+}
+.freelancing h2.h1,
+.social-contacts h2.h1 {
+  color: var(--main-color);
+  text-shadow: -2px 2px 3px rgb(0 0 0 / 20%);
+}
+.contacts .freelancing ul li a,
+.contacts .social-contacts ul li a {
+  box-shadow: rgb(255 255 255 / 7%) 0px 0px 10px,
+    rgb(255 255 255 / 4%) 0px 0px 10px, rgb(255 255 255 / 4%) 0px 0px 10px,
+    rgb(255 255 255 / 4%) 0px 0px 10px, rgb(255 255 255 / 4%) 0px 16px 16px;
+  background-color: #292929;
+  border: none;
+}
+.contacts .freelancing ul li p,
+.contacts .social-contacts ul li p {
+  color: #adadae;
 }
 footer {
   color: #fff;
