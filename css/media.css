@@ -201,6 +201,9 @@
     padding-left: 30px;
     color: #90717e;
   }
+  footer {
+    z-index: 2;
+  }
   footer .copyright p {
     margin-left: 20px;
     font-size: 14px;

@@ -167,6 +167,15 @@ $(function () {
       $("#socialAccounts").fadeIn("fast");
     }
   });
+  $("#list-tab-mobile a").click(function () {
+    if ($(".fade-social-accounts-pc").hasClass("active")) {
+      $("#socialAccounts").fadeOut("fast");
+    } else if ($(".fade-social-accounts-phone").hasClass("active")) {
+      $("#socialAccounts").fadeOut("fast");
+    } else {
+      $("#socialAccounts").fadeIn("fast");
+    }
+  });
   //Trigger Dark-light Desktop Mode
   var clicks = 0;
   $(".views .dark-light").click(function () {
@@ -205,9 +214,9 @@ $(function () {
   });
 });
 // Trigger egyfwd Modal
-var myModal = document.getElementById("myModal");
-myModal.addEventListener("shown.bs.modal", function () {
-  myInput.focus();
-});
+// var myModal = document.getElementById("myModal");
+// myModal.addEventListener("shown.bs.modal", function () {
+//   myInput.focus();
+// });
 
 // *.....................................................................*

@@ -126,9 +126,6 @@ footer {
   background-color: white;
   border: none;
 }
-.projects .card img {
-  border-color: white;
-}
 footer {
   background-color: #bcbcbc;
   box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.175);

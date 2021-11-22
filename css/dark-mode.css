@@ -168,11 +168,8 @@ body {
 .projects .card {
   background-color: #434343;
   border: none;
-  box-shadow: rgb(255 255 255 / 10%) 0px 1px 29px,
-    rgb(255 255 255 / 10%) 0px 12px 20px;
-}
-.projects .card img {
-  border-color: #212121;
+  box-shadow: rgb(255 255 255 / 5%) 0px 1px 16px,
+    rgb(255 255 255 / 5%) 0px 8px 15px;
 }
 .page-content-md .tab-content .contacts {
   background-color: black;
