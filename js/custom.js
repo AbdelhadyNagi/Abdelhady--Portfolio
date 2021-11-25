@@ -8,6 +8,25 @@ $(function () {
   // Triger Loading Page
   $(window).on("load", function () {
     $("#loading-page").fadeOut();
+    //Set Iframes
+    for (let i = 1; i <= 6; i++) {
+      if (i == 5) {
+        $("#project-5").attr(
+          "src",
+          "https://abdelhadynagi.github.io/Project-6/"
+        );
+      } else if (i == 6) {
+        $("#project-6").attr(
+          "src",
+          "https://abdelhadynagi.github.io/Project-7/"
+        );
+      } else {
+        $(`#project-${i}`).attr(
+          "src",
+          `https://abdelhadynagi.github.io/Project-${i}/`
+        );
+      }
+    }
   });
   // Triger Views
   var desktop = $(".views .view .desktop");
